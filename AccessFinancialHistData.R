@@ -15,7 +15,6 @@ plot(BA[ , "BA.Adjusted"], main = "BA and JPM",col="red")
 #plot JPM.Adjusted Close (added into the same figure)
 lines(JPM[ , "JPM.Adjusted"], col="green")
 
-
 #computer log return for BA
 BA.rtn=diff(log(BA$BA.Adjusted)) 
 chartSeries(BA.rtn,theme="white")
@@ -23,7 +22,6 @@ chartSeries(BA.rtn,theme="white")
 #computer log return for JPM
 JPM.rtn=diff(JPM$JPM.Adjusted)
 chartSeries(JPM.rtn,theme="white")
-
 
 #Compute summary statistics of BA and JPM
 basicStats(BA.rtn) 
